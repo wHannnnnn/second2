@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    var arr=[23,53,11,21,4,55]
+//    var sum=0;  //和
+//    var sum1=0; //平均值
+//    for(var i=0;i<arr.length;i++){
+//        sum+=arr[i]
+//    }
+//    sum1=sum/arr.length;
+//    console.log("和是"+sum,"平均值是"+sum1)
+
+
+//    var arr=[23,53,11,21,4,55]
+//    var maxNumber=arr[0];
+//    var minNumber=arr[0];
+//    for(var i=1;i<arr.length;i++){
+//        if(maxNumber<arr[i]){
+//            maxNumber=arr[i]
+//        }
+//        if(minNumber>arr[i]){
+//            minNumber=arr[i]
+//        }
+//    }
+//    console.log("最大值是"+maxNumber,"最小值是"+minNumber);
+//     var arr=["haha","hehe","xixi","zizi"]
+//     var arr0=arr[0]
+//     var shu="|";
+//     for(var i=1;i<arr.length;i++){
+//         arr0=arr0+shu+arr[i]
+//
+//     }
+//    console.log(arr0)
+
+//将数组中的0项去掉，将不为0的值存入一个新的数组，生成新的数组
+//var numbers = [0, 51, 46, 8, 0, 11, 0, 44, 3, 0]
+//    var newNumbers=[];
+//    for(var i=0;i<numbers.length;i++){
+//        if(numbers[i]!=0){
+//            newNumbers[newNumbers.length]=numbers[i]
+//        }
+//    }
+//    console.log(newNumbers)
+
+
+//    var arr=[1,3,5,7,9]
+//    var newArr=[]
+//    for(var i=arr.length-1;i>=0;i--){
+//         newArr[newArr.length]=arr[i] //newArr中的第一个数==arr的第五个数
+//    }
+//    console.log(newArr)
+
+//var arr=[33,21,44,75,53,66]
+//    for(var i=0; i<arr.length-1 ;i++) {  //共五趟
+//        for (var j = 0; j < arr.length - 1 - i; j++) { //第一趟换5次 以后每次-1
+//            if (arr[j] > arr[j + 1]) {
+//                var temp = arr[j + 1]
+//                arr[j + 1] = arr[j]
+//                arr[j] = temp
+//            }
+//
+//        }
+//    }
+//    console.log(arr)
+
+//
+//function num(n){
+//     var  sum=0
+//    for(var i=1;i<=n;i++){
+//        sum+=i
+//    }
+//    console.log(sum)
+//}
+//num(18)
+//    function num(n,m){
+//        var sum=0;
+//        for(var i=n;i<=m;i++){
+//            sum+=i
+//        }
+//        console.log(sum)
+//    }
+//    num(1,5)
+//    function mianji(n){
+//        var r=n;
+//        var pai=3.14;
+//
+//        var result=pai*r*r
+//        console.log(result)
+//    }
+//    mianji(2)
+//    function maxNumber(a,b){
+//        if(a>b){
+//            console.log("最大值是"+a)
+//        }else{
+//            console.log("最大值是"+b)
+//        }
+//    }
+//    maxNumber(4,6)
+//function maxNumber(a,b,c){
+//    if(a>b&&a>c){
+//        console.log("最大值是"+a)
+//    }else if(b>a&&b>c){
+//        console.log("最大值是"+b)
+//    }else{
+//        console.log("最大值是"+c)
+//    }
+//}
+//maxNumber(2,1,3)
+//
+function oneNumber (num) {
+
+   for (var i = 2 ; i < num ; i++){
+       if (num % i == 0){
+           console.log(num + ':不是素数');
+           return;
+
+       }
+          
+       
+   }
+    console.log(num + ':是素数');
+}
+oneNumber(2);
+//    function jie(n){
+//        var num=1
+//        for(var i=n;i>0;i--){
+//            num=num*i
+//        }
+//        console.log(num)
+//    }
+//        jie(5)
+//function jie(n) {
+//
+//    var num1=0
+//    for (var i = 1; i<=n; i++) {
+//        var num = 1
+//        for(var j=1;j<=i;j++){
+//            num=num*j
+//        }
+//        num1=num1+num
+//
+//
+//    }
+//    console.log(num1)
+//}
+//    jie(4)
+    function max(arr){
+        var maxNumbers=arr[0]
+        for(i=1;i<arr.length;i++){
+            if(maxNumbers<arr[i]){
+                maxNumbers=arr[i]
+            }
+
+        }
+        return maxNumbers
+    }
+console.log(max([4406,77,2,477,442,188]))
+
+//    function min(arr){
+//       var minNumbers=arr[0]
+//        for(var i=1;i<=arr.length;i++){
+//            if(minNumbers>arr[i]){
+//                minNumbers=arr[i]
+//            }
+//            return minNumbers
+//        }
+//    }
+//    console.log(min([5,8,2,5,76]))
+</script>
+
+
+</body>
+</html>
